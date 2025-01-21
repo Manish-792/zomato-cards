@@ -1,0 +1,153 @@
+*{
+    margin: 0;
+}
+
+body{
+    background-color: rgb(253, 243, 243);
+}
+
+.image{
+    position: relative;
+}
+
+.card:hover{
+    background-color: white;
+    border-color: white;
+}
+
+.off{
+    font-size: 30px;
+    color: white;
+    background-color: rgba(218, 43, 16, 0.6);
+    position: absolute;
+    bottom: 20px;
+    left: 10px;
+}
+
+.card{
+    display: inline-block;
+    margin-left: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+    border: 20px solid rgb(253, 243, 243);
+    border-radius: 20px;
+}
+
+
+.Box{
+    display: inline-block;
+}
+
+.img{
+    height: 250px;
+    width: 375px;
+    border-radius: 20px;
+}
+
+.Restaurant_name{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.Restaurant , .food, .Location{
+   position: relative;
+   margin-top: 10px;
+   margin-bottom: 10px;
+}
+
+.rating{
+    background-color: green;
+    height: 20px;
+    padding: 3px;
+    position: absolute;
+    right: 5px;
+    color: white;
+    border-radius: 8px;
+}
+
+.price, .Distance{
+    position: absolute;
+    right: 5px;
+}
+
+.food, .Place{
+    font-size: 15px;
+    color: rgb(88, 88, 88);
+}
+
+.Distance{
+    font-size: 10px;
+    font-weight: bold;
+}
+
+#filterButton{
+
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: rgba(219, 94, 94,0.7);
+    color: rgb(18, 18, 16);
+    width: 100px;
+    cursor: pointer;
+}
+
+/* #filterButton :hover{
+
+} */
+
+.filter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.filterOptions{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #f3e2e2;
+    padding: 10px;
+    height: 200px;
+    width: 400px;
+    position: absolute;
+    border-radius: 30px;
+    top:0;
+    left: 50%;
+    transform: translate(-50%,-50%) scale(0.1); 
+    visibility: hidden;
+    transition: transform 0.4s , top 0.4s;
+    z-index: 2;
+
+
+}
+.filterOptions>p{
+    font-size: 30px;
+    padding: 20px;
+    margin: 5px;
+    
+}
+input,label{
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 5px;
+}
+label{
+    margin-right: 20px;
+}
+
+/* button{
+    width: 100%;
+    margin-top: 50px;
+    padding: 10px 0;
+    background: #6fd649;
+    color: #fff;
+    border: 0;
+    outline: none;
+    font-size: 18px;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0 5px 5px rgba(0,0,0,0.2);
+
+} */
